@@ -16,6 +16,7 @@ const Signin=()=>{
       {
          let res=await axios.post('http://localhost:5000/login',data)
          if(res){ 
+         localStorage.setItem('userdetails',JSON.stringify(res.data))
          setError('')
          Navigate('/reciepe')
          setdata({email:'',password:''})

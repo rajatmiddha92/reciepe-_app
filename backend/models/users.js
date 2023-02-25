@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
 
-const schema=mongoose.Schema({
+const schema=new mongoose.Schema({
     email:{type:String, unique:true},
     password:{type:String},
     confirmpassword:{type:String}

@@ -1,7 +1,7 @@
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 
 const Signup=()=>{
    const Navigate=useNavigate()
@@ -50,6 +50,7 @@ const Signup=()=>{
     </div>
     <div className='text-center mr-10'>
     <div>{error}</div>
+    <div className='mb-4'>Already Registerd?<Link to='/signin' ><span className='ml-4 text-blue-400'>Sign in</span></Link></div>
     <button onClick={handleregister} className='mb-8 bg-orange-400 text-white tracking-widest text-2xl rounded-xl px-5 py-2'>CONTINUE</button>
     </div>
 
