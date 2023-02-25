@@ -56,7 +56,7 @@ const Reciepe=()=>{
         <input onChange={(e)=>setsearch(e.target.value)} className='border-2  px-2 w-1/3 py-2 bg-gray-500 text-white' type="text" placeholder='Search Here ... '/>
         </div>
         <div className='text-center mb-5' >
-        <FoodBankIcon sx={{ fontSize: 40 }}/>
+        <FoodBankIcon onClick={()=>Navigate('/form')} sx={{ fontSize: 40 }}/>
         </div>
         <div className='font-bold'>All Reciepes</div>
    </section>
