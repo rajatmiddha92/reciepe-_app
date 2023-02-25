@@ -7,6 +7,10 @@ const app=express()
 
 app.use(cors())
 app.use(express.json())
+app.get('/',(req,res)=>
+{
+    res.send('working.....')
+})
 
 app.post('/register',async(req,res)=>{
     let {email,password,confirmpassword}=req.body
